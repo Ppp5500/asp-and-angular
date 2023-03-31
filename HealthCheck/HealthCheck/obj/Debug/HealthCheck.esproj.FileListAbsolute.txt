@@ -2,3 +2,5 @@ C:\Ppp_Git\HealthCheck\HealthCheck\obj\Debug\HealthCheck.esproj.SuggestedBinding
 C:\Ppp_Git\HealthCheck\HealthCheck\obj\Debug\HealthCheck.esproj.CoreCompileInputs.cache
 C:\Ppp_Git\asp-and-angular\HealthCheck\HealthCheck\obj\Debug\HealthCheck.esproj.SuggestedBindingRedirects.cache
 C:\Ppp_Git\asp-and-angular\HealthCheck\HealthCheck\obj\Debug\HealthCheck.esproj.CoreCompileInputs.cache
+D:\Ppp_Git\asp-and-angular\HealthCheck\HealthCheck\obj\Debug\HealthCheck.esproj.SuggestedBindingRedirects.cache
+D:\Ppp_Git\asp-and-angular\HealthCheck\HealthCheck\obj\Debug\HealthCheck.esproj.CoreCompileInputs.cache
