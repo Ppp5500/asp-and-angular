@@ -24,7 +24,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-app.UseHealthChecks(new PathString("/api/health"));
+app.UseHealthChecks(new PathString("/api/health"),
+    new CustomHealthCheckOptions());
 app.MapControllers();
 
 app.Run();
