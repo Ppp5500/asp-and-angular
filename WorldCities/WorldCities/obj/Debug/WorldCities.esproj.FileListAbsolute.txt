@@ -1,0 +1,2 @@
+D:\Ppp_Git\asp-and-angular\WorldCities\WorldCities\obj\Debug\WorldCities.esproj.SuggestedBindingRedirects.cache
+D:\Ppp_Git\asp-and-angular\WorldCities\WorldCities\obj\Debug\WorldCities.esproj.CoreCompileInputs.cache
