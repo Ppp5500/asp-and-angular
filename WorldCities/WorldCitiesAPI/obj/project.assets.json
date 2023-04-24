@@ -143,7 +143,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
             "related": ".xml"
           }
         },
@@ -218,7 +218,7 @@
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -434,6 +434,24 @@
           "runtimes/win-x64/native/krbcc64.dll": {
             "assetType": "native",
             "rid": "win-x64"
+          }
+        }
+      },
+      "MySql.EntityFrameworkCore/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.0",
+          "MySql.Data": "8.0.28"
+        },
+        "compile": {
+          "lib/net6.0/MySql.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MySql.EntityFrameworkCore.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1668,6 +1686,19 @@
         "runtimes/win-x64/native/krbcc64.dll"
       ]
     },
+    "MySql.EntityFrameworkCore/6.0.0": {
+      "sha512": "0cH22RxtheOWVbuae83iX/h3f5QxCtrtfXPQGGEhQeO1ypvdqcBBKzPiNBtO68Z+5fs9mx8RQrgS7na/fAey+g==",
+      "type": "package",
+      "path": "mysql.entityframeworkcore/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/MySql.EntityFrameworkCore.dll",
+        "lib/net6.0/MySql.EntityFrameworkCore.xml",
+        "mysql.entityframeworkcore.6.0.0.nupkg.sha512",
+        "mysql.entityframeworkcore.nuspec"
+      ]
+    },
     "Portable.BouncyCastle/1.9.0": {
       "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
       "type": "package",
@@ -2823,6 +2854,7 @@
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
       "MySql.Data >= 8.0.33",
+      "MySql.EntityFrameworkCore >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2833,11 +2865,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
+      "projectUniqueName": "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
       "projectName": "WorldCitiesAPI",
-      "projectPath": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
+      "projectPath": "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
       "packagesPath": "C:\\Users\\pinka\\.nuget\\packages\\",
-      "outputPath": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\obj\\",
+      "outputPath": "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2885,6 +2917,10 @@
             "target": "Package",
             "version": "[8.0.33, )"
           },
+          "MySql.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
@@ -2909,7 +2945,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
