@@ -25,4 +25,10 @@ public class Country
     /// </summary>
     public string ISO3 { get; set; } = null!;
     #endregion
+    #region Navigation Properties
+    /// <summary>
+    /// A collection of all the cities related to this country.
+    /// </summary>
+    public ICollection<City>? Cities { get; set; } = null;
+    #endregion
 }

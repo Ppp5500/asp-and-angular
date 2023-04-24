@@ -29,6 +29,13 @@ public class City
     /// <summary>
     /// Country Id(foreign key
     /// </summary>
+    [ForeignKey(nameof(Country))]
     public int CountryId { get; set; }
+    #endregion
+    #region Navigation Properties
+    /// <summary>
+    /// The country related to this city.
+    /// </summary>
+    public Country? Country { get; set; } = null!;
     #endregion
 }

@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouteTestComponent } from './route-test/route-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    RouteTestComponent
   ],
   imports: [
     BrowserModule, HttpClientModule,
