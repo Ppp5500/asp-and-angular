@@ -1,9 +1,74 @@
-<p>jumsim works!</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    <head> 요소. 이 요소는 페이지를 조회하는 사람들에게 보여주는 콘텐츠가 아닌
+    당신이 HTML 페이지에 포함하고 싶어하는 모든 재료들을 위한 컨테이너 역할을 합니다.
+    여기에는 keywords (en-US)와 검색 결과에 표시되길 원하는 페이지 설명, 콘텐츠를 꾸미기 위한 CSS, 문자 집합 선언 등과 같은 것들을 포함합니다.
+  -->
 
-<mat-form-field appearance="fill">
-  <mat-label>Choose a date</mat-label>
-  <input matInput [matDatepicker]="picker">
-  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
+  <meta charset="utf-8" />
+  <!--
+    <meta charset="utf-8"> — 이 요소는 문서가 사용해야 할 문자 집합을 인간의 방대한 주류 기록언어에 있는
+    대부분의 문자가 포함되어 있는 utf-8으로 설정합니다. 본질적으로 여러분이 사용할 수 있는 어떠한 문자 콘텐츠도 다룰 수 있습니다.
+    이 문자 집합을 설정하지 않을 이유가 없으며, 그렇게 설정하면 나중에 발생할 수 있는 일부 문제를 피할 수 있습니다.
+  -->
+
+  <meta name="viewport" content="width=device-width" />
+  <!--
+     뷰포트 요소는 뷰포트의 너비에서 페이지가 렌더링하도록하며,
+    모바일 브라우저가 뷰포트보다 넓은 페이지를 렌더링한 후 축소하는 것을 방지합니다.
+  -->
+
+  <title>둥근별 점심 고르기 페이지</title>
+  <!--
+    <title> 요소. 이것은 페이지의 제목을 설정합니다,
+    로드된 페이지 브라우저의 탭에 나타나는 제목입니다.
+    이 요소는 북마크나 즐겨찾기에서 페이지를 설명하는 것으로도 사용됩니다.
+  -->
+</head>
+
+<body>
+  <!--
+    <body> 요소. 이것은 페이지에 방문한 모든 웹 사용자들에게 보여주길 원하는 모든 컨텐트를 담고 있으며,
+    그것이 텍스트일 수도, 이미지, 비디오, 게임, 플레이할 수 있는 오디오 트랙이나 다른 무엇이든 될 수 있습니다.
+  -->
+
+  <!-- 제목을 나타내는 4개의 headging level들-->
+  <h1 style="text-align:center">점심 고르기 with h1</h1>
+  <h2 style="text-align:left">점심 고르기 with h2</h2>
+  <h3 style="text-align:right">점심 고르기 with h3</h3>
+  <h4>점심 고르기 with h4</h4>
+
+  <div style="width:30%; height:300px; float:left">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>날짜?</mat-card-title>
+        <mat-card-subtitle>이건 없어도 될듯</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>This card indeterminates progress bar.</p>
+        <p>{{longText}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+
+  <div style="width:49%; height:300px; float:right">
+    <mat-form-field appearance="fill">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+</body>
+</html>
+
+
+
 
