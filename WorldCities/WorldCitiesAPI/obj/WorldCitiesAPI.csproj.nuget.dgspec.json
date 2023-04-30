@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj": {}
+    "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj": {}
   },
   "projects": {
-    "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj": {
+    "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
+        "projectUniqueName": "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
         "projectName": "WorldCitiesAPI",
-        "projectPath": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
+        "projectPath": "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
         "packagesPath": "C:\\Users\\pinka\\.nuget\\packages\\",
-        "outputPath": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\obj\\",
+        "outputPath": "C:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,19 +45,31 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.3.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -79,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
