@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { CitiesComponent } from './cities/cities.component';
 import { RouteTestComponent } from './route-test/route-test.component';
 import { JumsimComponent } from './jumsim/jumsim.component';
 
@@ -29,10 +30,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     HomeComponent,
     NavMenuComponent,
     RouteTestComponent,
-    JumsimComponent
+    JumsimComponent,
+    CitiesComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule,
+    BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
