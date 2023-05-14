@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JumsimComponent implements OnInit {
   selected!: Date | null;
-  currDate!: Date | null;
   num_dorirock: number = 6;
   num_salad: number = 3;
   num_etc: number = 1;

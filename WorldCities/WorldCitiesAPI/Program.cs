@@ -15,8 +15,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(
-    options => options.UseSqlServer(
-        builder.Configuration.GetConnectionString("DefaultConnection")
+    options => options.UseMySQL(
+        builder.Configuration.GetConnectionString("MySqlConnection")
         )
     );
 
@@ -46,6 +46,16 @@ else
 }
 
 app.UseHttpsRedirection();
+
+// Invoke the UseForwardedHeaders middleware and configure it
+// to forward the X-Forwarded-For and X-Forwarded-Proto headers.
+// NOTE: This must be put BEFORE calling UseAuthentication
+// and other authentication scheme middlewares.
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor
+| ForwardedHeaders.XForwardedProto
+});
 
 app.UseAuthorization();
 
