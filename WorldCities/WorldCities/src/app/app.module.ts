@@ -11,6 +11,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { CitiesComponent } from './cities/cities.component';
 import { RouteTestComponent } from './route-test/route-test.component';
 import { JumsimComponent } from './jumsim/jumsim.component';
+import { WebgpuComponent } from './webgpu/webgpu.component';
 
 // Angular Material modules
 import { AngularMaterialModule } from './angular-material.module';
@@ -22,7 +23,8 @@ import { AngularMaterialModule } from './angular-material.module';
     NavMenuComponent,
     RouteTestComponent,
     JumsimComponent,
-    CitiesComponent
+    CitiesComponent,
+    WebgpuComponent
   ],
   imports: [
     BrowserModule,
