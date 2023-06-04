@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "3U+CUcAosRTNpMIfvoso2o2LQZHTJLcPcGNacgRmpp5RBNmLNQK/kZfRLKI3Z1MV24zIWHCcagKDh1ZeMQXjbg==",
-=======
   "dgSpecHash": "hZZTlQExcnbgyaBUIOkJvzWww+7rFKgasv+PYzMEQ2rlsckRAsbiBt0itjCPPboQTAltGa98qrKYCQyufmao3A==",
->>>>>>> 0cbb5bc344f6ce81a9b461641803e1cd9242f2ca
   "success": true,
   "projectFilePath": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\WorldCitiesAPI\\WorldCitiesAPI.csproj",
   "expectedPackageFiles": [

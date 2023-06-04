@@ -15,6 +15,7 @@ import { WebgpuComponent } from './webgpu/webgpu.component';
 
 // Angular Material modules
 import { AngularMaterialModule } from './angular-material.module';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AngularMaterialModule } from './angular-material.module';
     RouteTestComponent,
     JumsimComponent,
     CitiesComponent,
-    WebgpuComponent
+    WebgpuComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
