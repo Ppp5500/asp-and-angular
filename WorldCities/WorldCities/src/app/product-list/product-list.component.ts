@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from './products';
-import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-product-list',

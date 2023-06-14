@@ -12,10 +12,12 @@ import { CitiesComponent } from './cities/cities.component';
 import { RouteTestComponent } from './route-test/route-test.component';
 import { JumsimComponent } from './jumsim/jumsim.component';
 import { WebgpuComponent } from './webgpu/webgpu.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 // Angular Material modules
 import { AngularMaterialModule } from './angular-material.module';
-import { ProductListComponent } from './product-list/product-list.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     JumsimComponent,
     CitiesComponent,
     WebgpuComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductAlertsComponent
   ],
   imports: [
     BrowserModule,
