@@ -1,7 +1,0 @@
-header {
-    position: sticky;
-    background-color: deeppink;
-    top: 0px;
-    opacity: 0.7;
-    backdrop-filter: blur(30px);
-  }
