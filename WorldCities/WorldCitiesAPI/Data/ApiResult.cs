@@ -40,9 +40,10 @@ public class ApiResult<T>
         if(!string.IsNullOrEmpty(filterColumn) && !string.IsNullOrEmpty(filterQuery) && IsValidProperty(filterColumn))
         {
             source = source.Where(
-                        string.Format("{0}.StartsWith(@0)",
+                        String.Format("{0}.StartsWith(@0)",
                         filterColumn),
                         filterQuery);
+            Console.WriteLine($"source: {source.ToString()}");
         }
         var count = await source.CountAsync();
 

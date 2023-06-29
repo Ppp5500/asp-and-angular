@@ -17,6 +17,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 
 // Angular Material modules
 import { AngularMaterialModule } from './angular-material.module';
+import { CountriesComponent } from './countries/countries.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AngularMaterialModule } from './angular-material.module';
     CitiesComponent,
     WebgpuComponent,
     ProductListComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    CountriesComponent
   ],
   imports: [
     BrowserModule,
