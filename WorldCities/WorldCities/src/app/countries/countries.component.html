@@ -1,1 +1,12 @@
-<p>countries works!</p>
+<h1>Countries</h1>
+
+<p>Here's a list of countries: feel free to play with it.</p>
+
+<p *ngIf="!countries"><em>Loading...</em></p>
+
+<mat-form-field [hidden]="!countries">
+    <input matInput #filter (keyup)="loadData(filter.value)"
+        placeholder="Filter by name (or poart of it)...">
+</mat-form-field>
+
+<table mat-table [dataSource]="countries" class="mat-elevation-z8"></table>
