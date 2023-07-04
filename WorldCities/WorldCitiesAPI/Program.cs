@@ -14,9 +14,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// 자꾸 널 가능 참조라고 해서 그냥 connectionString 쑤셔넣었음
+// 원래는 appsettings에 있어야 되는 건데...
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseMySQL(
-        builder.Configuration.GetConnectionString("MySqlConnection")
+        "server=127.0.0.1;uid=root;pwd=azsx1324;database=WorldCities"
         )
     );
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LA1pc+1ZR6s5fRg20Xlsag0n5m6Bd4ckc1Rp+11x/qSOIDi41nxk03oo+XUxyIVTkwWtbT69BTQQTBSDJJFeAA==",
+  "dgSpecHash": "KGI/52Clc2c6t9zA3t6R4sjRHA5DdtTKy1u/Lpg57wZ6tu9prdAjsX6Ho0AQfACytQtazcJp15Eq+0SdPwQlcA==",
   "success": true,
-  "projectFilePath": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\Worldcitiesapi\\WorldCitiesAPI.csproj",
+  "projectFilePath": "D:\\Ppp_Git\\asp-and-angular\\WorldCities\\worldcitiesapi\\WorldCitiesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pinka\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\pinka\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

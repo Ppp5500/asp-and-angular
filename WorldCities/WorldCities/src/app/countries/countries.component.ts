@@ -19,7 +19,7 @@ export class CountriesComponent implements OnInit{
   defaultPageIndex: number = 0;
   defaultPageSize: number = 10;
   public defaultSortColumn: string = "name";
-  public defaultSortOrder: "asc" | "desc" | "test" = "asc";
+  public defaultSortOrder: "asc" | "desc" = "asc";
 
   defaultFilterColumn: string = "name";
   filterQuery?: string;
@@ -50,12 +50,14 @@ export class CountriesComponent implements OnInit{
       .set("pageSize", event.pageSize.toString())
       .set("sortColumn", (this.sort) ? this.sort.active : this.defaultSortColumn)
       .set("sortOrder", (this.sort) ? this.sort.direction : this.defaultSortOrder);
+    
     if(this.filterQuery){
       params = params
         .set("filterColumn", this.defaultFilterColumn)
         .set("filterQuery", this.filterQuery);
     }
 
+    // 아니 cities에서는 https://를 안 적어도 잘 되드만 왜 얘는 안 됨?
     this.http.get<any>(url, {params})
       .subscribe(result => {
         this.paginator.length = result.totalCount;
