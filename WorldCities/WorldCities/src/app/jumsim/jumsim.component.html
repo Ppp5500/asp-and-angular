@@ -84,7 +84,44 @@
     <input type="number">
     <input type="text" disabled="disabled">
     <img src="../../assets/img/dog01.jpg" width="30%" height="auto">
+
+    <!-- 
+      PDF나 비디오 같이 다운로드 되거나 스트리밍 되는 링크에 연결 할 때는 명확히
+      표현하여 혼란을 줄어야 합니다.
+    -->
+    <p><a href="http://www.example.com/large-report.pdf">
+      Download the sales report (PDF, 10MB)
+    </a></p>
+
+    <!--
+      파일 다운로드에 연결 시 기본 저장 파일 이름 지정 가능
+    -->
+    <a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US"
+      download="firefox-39-installer.exe">
+      Download Firefox 39 for Windows
+    </a>
     
+    <!-- description list-->
+    <dl>
+      <dt>Bacon</dt>
+      <dd>The glue that binds the world together.</dd>
+      <dt>Eggs</dt>
+      <dd>The glue that binds the cake together</dd>
+      <dt>Coffee</dt>
+      <dd>The drink that gets the wold running in the morning</dd>
+    </dl>
+
+    <!-- 인용구 -->
+    <!-- -->
+    <blockquote cite="The glue that binds the world together.">
+      <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Bleck Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+    </blockquote>
+
+    <!-- Inline quotations -->
+    <p>The quote element - <code>&lt;q&gt;</code> - is 
+      <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
+        for shot quotations that don't require paragraph breaks.</q>
+    </p>
   </body>
 </html>
 

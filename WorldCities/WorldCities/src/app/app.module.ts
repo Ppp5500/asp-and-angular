@@ -18,6 +18,7 @@ import { WebgpuComponent } from './webgpu/webgpu.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { CountriesComponent } from './countries/countries.component';
+import { HtmlDoodlesComponent } from './html-doodles/html-doodles.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CountriesComponent } from './countries/countries.component';
     WebgpuComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    CountriesComponent
+    CountriesComponent,
+    HtmlDoodlesComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { CitiesComponent } from './cities/cities.component';
 import { CountriesComponent } from './countries/countries.component';
 import { WebgpuComponent } from './webgpu/webgpu.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { HtmlDoodlesComponent } from './html-doodles/html-doodles.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'route-test', component: RouteTestComponent },
   { path: 'jumsim', component: JumsimComponent },
   { path: 'webgpu', component: WebgpuComponent },
-  { path: 'product-list', component: ProductListComponent }
+  { path: 'product-list', component: ProductListComponent },
+  { path: 'html-doodles', component: HtmlDoodlesComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
