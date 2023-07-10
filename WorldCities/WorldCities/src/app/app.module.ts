@@ -2,6 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Angular Material modules
 import { AngularMaterialModule } from './angular-material.module';
@@ -19,7 +20,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { CountriesComponent } from './countries/countries.component';
 import { HtmlDoodlesComponent } from './html-doodles/html-doodles.component';
-
+import { CityEditComponent } from './cities/city-edit.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +34,16 @@ import { HtmlDoodlesComponent } from './html-doodles/html-doodles.component';
     ProductListComponent,
     ProductAlertsComponent,
     CountriesComponent,
-    HtmlDoodlesComponent
+    HtmlDoodlesComponent,
+    CityEditComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
