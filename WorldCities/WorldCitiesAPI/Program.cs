@@ -2,10 +2,21 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.HttpOverrides;
 using WorldCitiesAPI.Data;
 
+// allow cors
+//var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 Console.WriteLine($"We are in Program.cs");
 // Add services to the container.
+
+// builder.Services.AddCors(options =>{
+//     options.AddPolicy(name: MyAllowSpecificOrigins,
+//                         policy =>{
+//                             policy.WithOrigins("http://localhost:4200",
+//                                                 "https://localhost:4200");
+//                         });
+// });
 
 builder.Services.AddControllers();
     //.AddJsonOptions(opsions => { opsions.JsonSerializerOptions.WriteIndented = true; });

@@ -32,7 +32,7 @@ export class CountriesComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    
+    this.loadData();
   }
 
   loadData(query?: string) {

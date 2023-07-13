@@ -1,12 +1,12 @@
 <div class="city-edit">
     <h1>{{title}}</h1>
-    <p *ngIf="!city"><em>Loading</em></p>
+    <p *ngIf="this.id &&!city"><em>Loading</em></p>
     <div [formGroup]="form" (ngSubmit)="onSubmit()">
 
         <!-- Name -->
         <mat-form-field>
             <mat-label>Name:</mat-label>
-            <input matInput formControlName="Name" required
+            <input matInput formControlName="name" required
                     placeholder="Type a Name">
         </mat-form-field>
 
@@ -26,12 +26,22 @@
         <div>
             <button mat-flat-button color="primary"
                 type="submit" (click)="onSubmit()">
-                Save
+                {{ this.id ? "Save" : "Create" }}
             </button>
             <button mat-flat-button color="secondary"
                 [routerLink]="['/cities']">
                 Cancle
             </button>
         </div>
+
+        <!-- Country -->
+        <p *ngIf="countries">
+            <select id="countryId" formControlName="countryId">
+                <option value="">--- Select a country ---</option>
+                <option *ngFor="let country of countries" [value]="country.id">
+                    {{country.name}}
+                </option>
+            </select>
+        </p>
     </div>
 </div>
